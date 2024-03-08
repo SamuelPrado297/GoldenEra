@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> <!--Bootstrap-CSS aplicado localmente-->
+    <link rel="stylesheet" href="./css/inicial.css">
+    <link rel="shortcut icon" href="./imagens/tvtubo_logo.png" type="image/x-icon"> <!-- Ícone do título da página -->
+    <title> Golden Era - Página Inicial </title>
+</head>
+<body>
+    
+  <!-- Código da NavBar -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-warning navbar-dark">
+      <div class="container-fluid">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img src="./imagens/tvtubo_logo.png" alt="logo" width="100" >
+          <strong>GOLDEN ERA</strong> </a>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="menuNavbar"> <!-- Navbar responsiva para celular --> 
+              <div class="navbar-nav">
+                  <a href="halo3.html" class="nav-link active"> Halo 3</a>
+                  <a href="gow.html" class="nav-link active"> God of War</a>
+                 
+                  <div class="dropdown"> <!-- Aba de select -->
+                      <a href="#" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown"> Menções Honrosas </a>
+                      <ul class="dropdown-menu">
+                          <li> 
+                              <a href="burnout.html" class="dropdown-item"> Burnout 3: Takedown </a>
+                          </li>
+                          <li> 
+                              <a href="fh2012.html" class="dropdown-item"> Forza Horizon </a>
+                          </li>
+                      </ul>
+                  </div>    
+              </div>
+          </div>    
+      </div>
+      <!-- Fim do código da NavBar -->
+
+      <!-- Código do Modo Noturno-->
+      <div class="container d-flex justify-content-end px-5">
+        <input type="checkbox" class="checkbox" id="chk">
+        <label for="chk" class="label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+      <!-- Fim do código do Modo Noturno-->    
+  </nav>
+    <!-- Fim do código da Navbar-->
+
+    <!-- Carrossel -->
+    <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="ads">
+      <div class="carousel-indicators">
+        <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+        <button class="" data-bs-target="#ads" data-bs-slide-to="1"></button>
+        <button class="" data-bs-target="#ads" data-bs-slide-to="2"></button>
+      </div>
+      
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./imagens/halo_carrossel.jpg"?random=1 class="d-flex w-100 vh-100" alt="Halo 3">
+            <div class="carousel-caption d-block">
+              <h3> A Era Dourada </h3>
+              <p> Conheça jogos que marcaram seu gênero e sua geração </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="./imagens/gow_carrossel.jpg"?random=2 class="d-flex w-100 vh-100" alt="God Of War (2005)">
+            <div class="carousel-caption d-block">
+              <h3> Nostalgia </h3>
+              <p> Os Clássicos do começo dos anos 2000 que só quem jogou sabe como foi </p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-dark" data-bs-interval="4000">
+            <img src="./imagens/burnout_carrossel.jpg"?random=3 class="d-block w-100 vh-100" alt="Burnout 3: Takedown">
+            <div class="carousel-caption d-block">
+              <h3> Escolhas do Editor </h3>
+              <p> Conheça algumas <strong> Menções Honrosas </strong> escolhidas pelo editor do Blog </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim do código do Carrossel -->
+
+      <div class="o_que_e">
+        <h1> O QUE É A GOLDEN ERA </h1>
+        <hr>
+        <p id="sobre"> O Começo dos anos 2000 foi um presente para a comunidade de jogos de todo o país.
+           Desde o explendido Playstation 2 que já marcou presença na casa de inúmeros brasileiros,
+          até o mágico Xbox 360 que marcou milhares de jogadores com suas franquias.</p>
+      </div>
+      <br>
+      <h1> O QUE VOCÊ VAI ENCONTRAR AQUI </h1>
+      <hr>
+      
+      <!-- Cards -->
+      <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+         <div class="col">
+            <div class="card">
+              <img class="img-fluid rounded-start w-100" src="./imagens/tvgold.png" alt="Televisão de tubo Dourada">
+              <div class="card-body">
+                <h4 class="card-title"> Clássicos dos 00's</h4>
+                <p class="card-text"> Nesse blog, apresentaremos a você clássicos que fizeram história
+                no começo dos anos 2000 e que marcaram inúmeros jogadores.</p>
+              </div>
+            </div>
+          </div>  
+          <div class="col">
+            <div class="card">
+              <img class="img-fluid rounded-start w-100" src="./imagens/consoles.png" alt="Playstation e Xbox Gold Logo">
+              <div class="card-body">
+                <h4 class="card-title"> Guerra de Consoles </h4>
+                <p class="card-text"> Conheça alguns jogos que carregam nas costas os nomes dos 2 maiores consoles da geração:
+                <strong> Xbox e Playstation. </strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="img-fluid rounded-start w-100" src="./imagens/ps2gold.png" alt="Controle do PS2 Dourado">
+              <div class="card-body">
+                <h4 class="card-title"> Cadê meu PS2 Yuji?</h4>
+                <p class="card-text"> Dedicamos esse site às boas lembranças que muitos jovens e crianças tiveram a
+                  a oportunidade de ter um Playstation 2.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim do código dos Cards -->
+
+      <!-- Footer -->
+      <footer class="container-fluid text-warning bg-dark">
+        <div class="row pt-5 pb-5">
+          <section class="col-md-5 mb-5">
+            <h5> Jogos </h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="halo3.html" class="nav-link text-white"> Halo 3 </a>
+              </li>
+              <li class="nav-item">
+                <a href="gow.html" class="nav-link text-white"> God of War </a>
+              </li>
+              <li>
+                <a href="fh2012.html" class="nav-link text-white"> Forza Horizon </a>
+              </li>
+              <li class="nav-item">
+                <a href="burnout.html" class="nav-link text-white"> Burnout 3: Takedown </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="col-md-5">
+            <h5 class="mx-2"> Dev e Projetos </h5>
+            <a href="https://www.linkedin.com/in/samuel-da-silva-prado-dias-9aa69726a/" target="_blank">
+              <img src="./imagens/linkedin_logo.png" width="75" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/SamuelPrado297" target="_blank">
+              <img src="./imagens/github_logo.png" width="60" alt="Git Hub">
+            </a>
+          </section>
+          
+          <section class="col-md-2">
+            <h5> Estúdios </h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="https://www.halowaypoint.com/343-industries" class="nav-link text-white" target="_blank"> 343 Industries </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://sms.playstation.com" class="nav-link text-white" target="_blank"> Santa Monica </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://playground-games.com" class="nav-link text-white" target="_blank"> Playground Games </a>
+              </li>
+              <li>
+                <a href="https://www.ea.com/ea-studios/criterion-games" class="nav-link text-white" target="_blank"> Criterion Games </a>
+              </li>
+            </ul>
+          </section>
+          <br>
+          <p> <strong> &copy; Todos os direitos reservados aos desenvolvedores e publicadoras </strong> </p>
+        </div>
+      </footer>
+      <!-- Fim do código do Footer -->
+
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!--Bootstrap-JS aplicado localmente-->
+      <script src="./js/inicialjs.js"></script>
+      <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
